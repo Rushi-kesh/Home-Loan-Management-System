@@ -14,7 +14,7 @@ Data Base Tables:
   `accountnumber` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`accountnumber`)
 )</b> 
-<br>
+\n
 2:LOAN DETAILS
 <b>CREATE TABLE `loandetails` (
   `accountnumber` int(11) NOT NULL,
@@ -27,7 +27,7 @@ Data Base Tables:
   KEY `accountnumber_idx` (`accountnumber`),
   CONSTRAINT `accountnumber` FOREIGN KEY (`accountnumber`) REFERENCES `loanusers` (`accountnumber`) ON DELETE NO ACTION ON UPDATE NO ACTION
 );</b>
-<br>
+\n
 3:LOANTRANSACTIONS
 <b>CREATE TABLE `loan`.`loantransactions` (
   `accountnumber` INT,
@@ -35,4 +35,4 @@ Data Base Tables:
     FOREIGN KEY (`accountnumber`)
     REFERENCES `loan`.`loanusers` (`accountnumber`)
     );
-</b>
+\n
