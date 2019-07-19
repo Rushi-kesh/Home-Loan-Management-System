@@ -6,7 +6,7 @@ Problem Statement: Loan Management System to manage loan details of customer and
 Project databases:
 Database name:loan
 Data Base Tables:
-<br>
+<br/>
 1:LOANUSERS
 <b>CREATE TABLE `loanusers` (
   `username` varchar(45) NOT NULL,
@@ -14,7 +14,7 @@ Data Base Tables:
   `accountnumber` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`accountnumber`)
 )</b> 
-\n
+<br/>
 2:LOAN DETAILS
 <b>CREATE TABLE `loandetails` (
   `accountnumber` int(11) NOT NULL,
@@ -27,7 +27,7 @@ Data Base Tables:
   KEY `accountnumber_idx` (`accountnumber`),
   CONSTRAINT `accountnumber` FOREIGN KEY (`accountnumber`) REFERENCES `loanusers` (`accountnumber`) ON DELETE NO ACTION ON UPDATE NO ACTION
 );</b>
-\n
+<br/>
 3:LOANTRANSACTIONS
 <b>CREATE TABLE `loan`.`loantransactions` (
   `accountnumber` INT,
@@ -35,4 +35,4 @@ Data Base Tables:
     FOREIGN KEY (`accountnumber`)
     REFERENCES `loan`.`loanusers` (`accountnumber`)
     );
-\n
+<br/>
