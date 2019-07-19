@@ -1,7 +1,7 @@
 # Home-Loan-Management-System
 Created an home loan management system application in java
 Project Topic: Home Loan Automation System 
-<h1>Please edit your mysql username and password in resourses/database.properties<h1>
+<h1>Please edit your mysql username and password in resourses/database.properties</h1>
 Problem Statement: Loan Management System to manage loan details of customer and perform Loan related operations on Loan Details provided by end user.
 Project databases:
 Database name:  loan
